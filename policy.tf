@@ -10,6 +10,7 @@ locals {
     "space":             "[lower(input.run_updated.stack.space.id)]",
     "stack":             "[lower(input.run_updated.stack.id)]",
     "terraform_version": "[input.run_updated.stack.terraform_version]",
+    "tool":              "[input.run_updated.stack.terraform_workflow_tool]",
     "triggered_by":      "[input.run_updated.run.triggered_by]",
     "worker_pool":       "[worker_pool]",
   }
